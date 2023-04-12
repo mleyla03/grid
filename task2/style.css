@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.grid-container{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-areas:
+    "header header header ads"
+    "nav article article   article"
+    "nav footer  footer footer";
+    grid-template-rows: 60px 1fr 60px 2px;
+    grid-template-columns: 15% 1fr 13% 8%;
+   gap: 10px;
+   height: 90vh;
+
+
+}
+[class|=item]{
+    padding: 28px;
+    background: green;
+    color: purple;
+}
+.item-1{
+    grid-area: header;
+}
+.item-2{
+    grid-area: ads;
+}
+.item-3{
+    grid-area: nav ;
+}
+.item-4{
+    grid-area: article;
+}
+.item-5{
+    grid-area: footer;
+}

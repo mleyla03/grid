@@ -1,0 +1,43 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.grid-container{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav article ads"
+    "nav footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 15% 1fr 13%;
+   gap: 10px;
+   height: 100vh;
+
+
+}
+[class|=item]{
+    color: purple;
+    padding: 1.2em;
+    background: yellow;
+}
+.item-1{
+    grid-area: header;
+}
+.item-2{
+    grid-area: nav;
+}
+.item-3{
+    grid-area: article;
+}
+.item-4{
+    grid-area: ads;
+}
+.item-5{
+    grid-area: footer;
+}

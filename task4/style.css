@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container { 
+    width: 70%;
+    height: 500px;
+    
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 400px 1fr 300px 300px;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    
+    grid-template-areas:
+      "one one two tree"
+      "one one four five";
+  }
+
+  
+  .one { opacity: 0.7; grid-area: one; background-size: cover;background-position: center; background-image: url(https://i0.wp.com/www.wordzz.com/wp-content/uploads/2016/10/552155-531722656-800-550dda7519-1476286104.jpg?resize=800%2C1200&ssl=1);
+ }
+  
+  .two { opacity: 0.7; grid-area: two;background-position: center;background-size: cover; background-image:  url(https://cdn-adventures-live.azureedge.net/adventurescache/c/d/a/9/8/a/cda98a10142ddd4a420d0a58b4f50e6f3d26d67c.jpg); }
+  
+  .tree { opacity: 0.7; grid-area: tree;background-size: cover;background-position: center; background-image: url(https://guidetoiceland.imgix.net/539124/x/0/kirkjufell-and-kirkjufellsfoss-at-golden-hour-4?w=360&dpr=2&h=210&fit=crop&crop=center&auto=format%2Ccompress&q=35&min-h=210&ixlib=react-9.4.0); }
+  
+  .four {  opacity: 0.7;grid-area: four; background-size: cover; background-position: center; background-image: url(https://i.pinimg.com/originals/ef/3e/c7/ef3ec71d3f970873f9607d9f06e41712.jpg);}
+  
+  .five { grid-area: five;background-color:#f5f2f2; } 
+  .five > .about{
+    width: 80%;
+    margin:  0 auto;
+   
+  }
+  .about h3{
+margin: 20px auto;
+width: 80%;
+    font-size: 30px;
+  }
+  .about p{text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+    
+ 
+  }
+  .icon{
+
+     height:100px;
+    width: 80%;
+    margin: 30px auto;
+
+  }
+  .icon i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+  .container .images:hover{
+    opacity: 1;
+    z-index: 3333335555555;
+    transform: scale(1.25);
+    transition: 2s linear;
+  }
+  .five:hover i{
+    background-color: purple;
+    color: white;
+    transition: 1s ease-in-out;
+    border: 1px solid palevioletred;
+    transform: scale(0.6);
+  }
